@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo Card</title>
-<a href="./index.html" class="back-btn">⬅</a>
- <link rel="stylesheet" href="./css/profile.css">
 
+  <!-- Correct CSS -->
+  <link rel="stylesheet" href="./css/todo.css">
 </head>
 
 <body>
+
+<!-- Back button MUST be inside body -->
+<a href="./index.html" class="back-btn" data-testid="back-button">⬅</a>
 
 <div class="bubbles">
   <span></span><span></span><span></span>
@@ -70,7 +73,8 @@
 
 </article>
 
-
+<!-- Correct JS -->
 <script src="./js/todo.js"></script>
+
 </body>
 </html>

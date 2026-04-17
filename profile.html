@@ -4,20 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile Card</title>
- <a href="./index.html" class="back-btn">⬅</a>
-  <link rel="stylesheet" href="./css/profile.css">
 
+  <!-- Correct CSS -->
+  <link rel="stylesheet" href="./css/profile.css">
 </head>
 
 <body>
 
+<!-- Back button MUST be in body -->
+<a href="./index.html" class="back-btn" data-testid="back-button">⬅</a>
+
 <main class="profile-card" data-testid="profile-card">
 
- <img 
-  src="./assets/download.jpg">
-  alt="Ani Voss profile picture"
-  data-testid="profile-image"
-  class="profile-img">
+  <!-- IMAGE -->
+  <img 
+    src="./assets/download.jpg"
+    alt="Ani Voss profile picture"
+    data-testid="profile-image"
+    class="profile-img">
 
   <!-- NAME -->
   <h2 data-testid="profile-name">Ani Voss</h2>
@@ -32,13 +36,16 @@
 
   <!-- BUTTON -->
   <button data-testid="profile-button" aria-pressed="false">
-  Follow
-</button>
+    Follow
+  </button>
 
-<p data-testid="profile-message" class="profile-message"></p>
+  <!-- MESSAGE -->
+  <p data-testid="profile-message" class="profile-message"></p>
 
 </main>
 
+<!-- Correct JS -->
 <script src="./js/profile.js"></script>
+
 </body>
 </html>
