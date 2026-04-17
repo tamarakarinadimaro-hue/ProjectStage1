@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+ <a href="./index.html" class="back-btn">⬅</a>
+  <link rel="stylesheet" href="./css/profile.css">
+
+</head>
+
+<body>
+
+<main class="profile-card" data-testid="profile-card">
+
+ <img 
+  src="./assets/download.jpg">
+  alt="Ani Voss profile picture"
+  data-testid="profile-image"
+  class="profile-img">
+
+  <!-- NAME -->
+  <h2 data-testid="profile-name">Ani Voss</h2>
+
+  <!-- ROLE -->
+  <p data-testid="profile-role">Frontend Developer</p>
+
+  <!-- BIO -->
+  <p data-testid="profile-bio">
+    Passionate developer who loves building clean and interactive web experiences.
+  </p>
+
+  <!-- BUTTON -->
+  <button data-testid="profile-button" aria-pressed="false">
+  Follow
+</button>
+
+<p data-testid="profile-message" class="profile-message"></p>
+
+</main>
+
+<script src="./js/profile.js"></script>
+</body>
+</html>
